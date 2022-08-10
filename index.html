@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>JOBOX</title>
+    <img src="images/Jobox.png" alt="Image Load Error" width="80" height="20"><br>
+
+    <h1>  CONTRACT AGREEMENT BETWEEN BMF Attorneys and a Client</h1><br>
+    <h4>Please fill in your details and download the contract form below the end of the form</h4><br>
+    <form action="/action_page.php">
+        <label for="fname">Name of a Client:</label>
+        <input type="text" id="clientname" name="clientname"><br><br>
+        <label for="start">Start date:</label>
+       <input type="date" id="start" name="trip-start"
+       value="2022-02-01"
+       min="2022-02-01" max="2022-12-31"><br><br>
+       <label for="start">End date:</label>
+       <input type="date" id="start" name="trip-start"
+       value="2023-01-01"
+       min="2023-01-01" max="2023-12-31"><br><br>
+
+       <div class="main">
+        <form method="post" action="#">
+        <label for="currency-field">Service Cost</label>
+        <input type="text" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="R10 000"><br>
+        
+      </form>
+        <br>
+      <h1>The Service Description</h1>
+      <br>
+
+<form action="/action_page.php">
+  <p><label for="w3review">Please describe our service:</label></p> 
+  <textarea id="w3review" name="w3review" rows="4" cols="50">About BMF Attorneys.</textarea>
+  <br>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Design - Easy Tutorials</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</form>
+<body>
+       <div class="container">
+         <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+         <div class="popup" id="popup">
+           <img src="tick.png">
+           <h2>Thank you!</h2>
+           <p>Your details has been successfully submitted. Thanks!</p>
+           <button type="button" onclick="closePopup()">OK</button>
+           
+
+         </div>
+       </div>
+       <script>
+         let popup=document.getElementById("popup");
+
+         function openPopup(){
+         popup.classList.add("open-popup");
+         }
+
+         function closePopup(){
+         popup.classList.remove("open-popup");
+         }
+       </script>
+       
+       
+</body>
+
+<a href="DownloadContract.zip" download>
+  DownloadContract
+</a>
+
+         <meta charset="UTF-8">
+         <title>download Button</title>
+    
+      
+  </head> 
+</html>
